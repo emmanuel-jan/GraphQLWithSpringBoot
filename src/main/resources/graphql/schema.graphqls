@@ -1,0 +1,15 @@
+type Query {
+    institutions: [Institution]
+    institutionById(id: ID!): Institution
+}
+
+type Institution {
+    id: ID!
+    name: String!
+    courses: [Course]
+}
+
+type Course {
+    id: ID!
+    name: String!
+}
